@@ -1,0 +1,220 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>The Coffee House Delivery</title>
+<link rel="stylesheet" href="css/css5.css"/>
+<!--<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
+<!--<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<script src="js/js.js"></script>
+</head>
+<body>
+	<div class="container1" id="containerr">
+		<div class="top-page">
+			<div class="logo">
+				<a href="page01.html"><img src="images/logo.jpg" class="logo-page"/></a>
+			</div>
+			<div class="giaohang">
+				<button class="giaongay"  id ="ship" onclick="check()" >GIAO NGAY</button>
+			</div>
+			<div class="inputtext">
+				<input type="text" id="text-input" class="input-text" placeholder="  Nhập Địa Chỉ Giao Hàng">
+			</div>
+			<div class="sign-in">
+				<button class="dang-nhap" onclick="document.getElementById('id01').style.display='block'">ĐĂNG NHẬP</button>
+			</div>
+		</div>
+		<div class="body-page">
+			<div class="list">
+				<ul class="list-menu">
+					<li style="border-bottom: 2px solid rgba(225,162,72,1.00);">Các món nổi bật</li>
+					<li>Cà Phê</li>
+					<li>Sô cô la</li>
+					<li>Thức uống trái cây</li>
+					<li>Trà đặc biệt</li>
+					<li>Vật Phẩm</li>
+					<li>Trung Thu</li>
+				</ul>
+			</div>
+			<div class="main-content">
+				<div class="tea">
+					<div class="tea1">
+						<img src="images/machiato1.jpeg"/>
+					</div>
+					<div class="content-product">
+						<h4 class="name" id="name1">Trà Matcha Macchiato</h4>
+						<button class="button-add" onclick="addinvoice('name1','price1')">+</button>
+						<p class="name-2">Matcha macchiato có vị hơi nhẫn đắng của bột matcha nhưng có hậu vị ngọt, bùi; kết hợp cùng foam phô mai thơm ngậy</p>
+						<p class="price" id="price1">45000 vnđ </p>
+					</div>
+				</div>
+				<div class="tea">
+					<div class="tea1">
+						<img src="images/machiato2.jpeg"/>
+					</div>
+					<div class="content-product">
+						<h4 class="name" id="name2">Trà Đen Macchiato</h4>
+						<button class="button-add" onclick="addinvoice('name2','price2')">+</button>
+						<p class="name-2">Trà đen macchiato đem lại cảm giác thú vị cho vị giác khi chất chát đậm đà của trà đen hòa cùng vị mằn mặn béo ngậy của kem phô mai.</p>
+						<p class="price" id="price2">42000 vnđ</p>
+					</div>
+				</div>
+				<div class="tea">
+					<div class="tea1">
+						<img src="images/machiato3.jpeg"/>
+					</div>
+					<div class="content-product">
+						<h4 class="name" id="name3">Trà Matcha Macchiato</h4>
+						<button class="button-add" onclick="addinvoice('name3','price3')">+</button>
+						<p class="name-2">Sản phẩm kết hợp giữa trà hoa, trái cây và milk foam- Mang tới sự trải nghiệm mới lạ về trình bày từ màu sắc bắt mắt của trà hoa đậu biếc là màu tím cùng lớp milk foam.</p>
+						<p class="price" id="price3">45000 vnđ</p>
+					</div>
+				</div>
+				<div class="tea">
+					<div class="tea1">
+						<img src="images/cafe1.jpeg"/>
+					</div>
+					<div class="content-product">
+						<h4 class="name" id="name4">Cà phê đen đá</h4>
+						<button class="button-add" onclick="addinvoice('name4','price4')">+</button>
+						<p class="name-2">sử dụng tỷ lệ trộn 70% Robusta và 30% Arabica, vị đậm đà đặc trưng của robusta và hương thơm của hạt Arabica hòa quyện.</p>
+						<p class="price" id="price4">29000 vnđ</p>
+					</div>
+				</div>
+				<div class="tea">
+					<div class="tea1">
+						<img src="images/cafe2.jpeg"/>
+					</div>
+					<div class="content-product">
+						<h4 class="name" id="name5">Cà phê sữa đá</h4>
+						<button class="button-add" onclick="addinvoice('name5','price5')">+</button>
+						<p class="name-2">vị đậm đà của cà phê hòa quyện với vị ngọt và béo của sữa đặc.</p>
+						<p class="price" id="price5">30000 vnđ</p>
+					</div>
+				</div>
+				<div class="tea">
+					<div class="tea1">
+						<img src="images/cafe3.jpeg"/>
+					</div>
+					<div class="content-product">
+						<h4 class="name" id="name6">Trà đào cam sả</h4>
+						<button class="button-add" onclick="addinvoice('name6','price6')">+</button>
+						<p class="name-2">trà kết hợp với vị ngọt, hương thơm của đào, vị nồng của xả, mùi thơm từ cam vàng, hòa quyện tạo ra 1 thức uống mát và tốt cho sức khỏe.</p>
+						<p class="price" id="price6">45000 vnđ</p>
+					</div>
+				</div>
+				<div class="tea">
+					<div class="tea1">
+						<img src="images/cafe4.jpeg"/>
+					</div>
+					<div class="content-product">
+						<h4 class="name" id="name7">Trà gạo rang macchiato</h4>
+						<button class="button-add" onclick="addinvoice('name7','price7')">+</button>
+						<p class="name-2">Trà gạo rang macchiato làm từ những hạt gạo rang siêu sạch và tinh túy từ người nông dân Việt Nam.</p>
+						<p class="price" id="price7">48000 vnđ</p>
+					</div>
+				</div>
+				<div class="tea">
+					<div class="tea1">
+						<img src="images/cafe5.png"/>
+					</div>
+					<div class="content-product">
+						<h4 class="name" id="name8">Trà ổi thanh long macchiato</h4>
+						<button class="button-add" onclick="addinvoice('name8','price8')">+</button>
+						<p class="name-2">Trà ổi thanh long macchiatoz làm từ những hương vị thiên nhiên tuyệt vời và siêu sạch.</p>
+						<p class="price" id="price8">48000 vnđ</p>
+					</div>
+				</div>
+				<div class="tea">
+					<div class="tea1">
+						<img src="images/cafe6.png"/>
+					</div>
+					<div class="content-product">
+						<h4 class="name" id="name9">Americano Macchiato</h4>
+						<button class="button-add" onclick="addinvoice('name9','price9')">+</button>
+						<p class="name-2">Americano Macchiato kèm theo lớp kem sữa siêu hấp dẫn và đậm chất phương tây.</p>
+						<p class="price" id="price9">45000 vnđ</p>
+					</div>
+				</div>
+			</div>
+			<div class="invoice">
+				<div class="product" id="product1">
+					
+				</div>
+				<div class="invoice-all">
+					<table>
+						<tr>
+							<th class="number-pro" id="count">Cộng(0 món)</th>
+							<th></th>
+						</tr>
+						<tr>
+							<th class="number-pro">TỔNG:</th>
+							<th id ="sumall">0</th>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+<!--
+	<div class="mobile">
+		
+	</div>
+-->
+	<div id="text-caution">
+		<div class="top-caution">
+			<center><h2 style="margin-top:0px;">Thông Báo</h2></center>
+			<button class="back" id="exit" onClick="backmenu()">x</button>
+		</div>
+		<div class="text-sent">
+		 <p>Vui lòng nhập số điện thoại để liên hệ.</p>
+			 <i class="large material-icons">phone</i>
+			 <input type="text" class="phone" id="id-phone">
+			 <button class="sent" onclick="showthanks()">OK</button>
+		</div>
+		<div class="thanks" id="nice">
+			<p><b>Cám ơn quý khách đã đặt hàng và hàng sẽ được giao sau 30p</b></p>
+			<center><img src="file:///C|/Users/phamminhhai/Desktop/fucking-project-final1/fucking-project-final/images/thanks.gif" style="width:100px;height:100px;"/></center>
+		</div>
+	</div>
+<!--	Dang nhap-->
+
+		<div id="id01" class="modal">
+
+		  <form class="modal-content animate" action="">
+			<div class="imgcontainer">
+			  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+			</div>
+			<div class="container">
+			  <label for="uname"><b>Username</b></label>
+			  <input type="text" placeholder="Enter Username" name="uname" class="inputuser">
+
+			  <label for="psw"><b>Password</b></label>
+			  <input type="password" placeholder="Enter Password" name="psw"  class="inputpass">
+
+			  <button type="submit" class="login">Login</button>
+			  <label>
+				<input type="checkbox" checked="checked" name="remember"> Remember me
+			  </label>
+			</div>
+
+			<div class="container" style="background-color:#f1f1f1">
+			  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+			  <span class="psw">Forgot <a href="#">password?</a></span>
+			</div>
+		  </form>
+		</div>
+
+	<script>
+	var modal = document.getElementById('id01');
+
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function(event) {
+		if (event.target == modal) {
+			modal.style.display = "none";
+		}
+	}
+	</script>
+</body>
+</html>

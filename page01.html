@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>The Coffee House</title>
+<link rel="stylesheet" href="css/cssp1.css"/>
+<!--<script src="http://code.jquery.com/jquery-latest.js"></script>-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+	<div class = "container" id="container">
+		<div class="nav-top" id="navtop1">
+			<center>
+				<img src="images/content-top-nav.png" class="img-logo"/>
+			</center>
+			<button id = "openbutton" class="open" onclick="openNav()">&#9776;</button>	
+		</div>
+<!--		test-->
+		<div id="mySidenav" class="sidenav">
+			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			  <a href="index.html">Trang chủ</a>
+			  <a href="page02.html">Giới thiệu</a>
+			  <a href="page01.html">Cửa hàng</a>
+			  <a href="page03.html">Menu</a>
+			  <a href="tch-page5.html">Giao hàng</a>
+		</div>
+<!--		tets-->
+		<div class="body">
+			<div class="body-1">
+				<div class="info-contact">
+					<h2>CÀ PHÊ NHÉ !</h2>
+					<a href="tch-page5.html"><button class="button-contact"><b>ĐẶT HÀNG ONLINE</b></button></a>
+					<a href="page03.html"><button class="button-contact"><b>ĐẾN CỬA HÀNG</b></button></a>
+				</div>
+			</div>
+			<div class="body-2">
+				<div class="paper-glass">
+					<img src="images/Paper-cup.png" class="cup"/>
+				</div>
+				<div class="content">
+						<p>“Đi cà phê” từ lâu không chỉ đơn thuần là uống một tách cà phê mà còn là dịp gặp mặt và trò chuyện cùng bạn bè. Tại The Coffee House,</p>
+						<p>chúng tôi trân trọng và đề cao giá trị kết nối giữa con người và trải nghiệm của khách hàng. Chúng tôi được truyền cảm hứng từ những tách cà phê</p>
+						<p>và thức uống mình tạo ra. Chúng tôi tin tưởng mạnh mẽ rằng những thức uống với chất lượng tốt nhất được phục vụ trong không gian</p>
+						<p>thân thiện bởi những nhân viên tận tâm tại The Coffee House sẽ mang lại những niềm vui bạn có thể chia sẻ cùng bạn bè và gia đình.</p>
+					</div>
+			</div>
+			<div class="body-4">
+			<a href="page03.html">
+				<div class="pro-1">
+					<div class="content-pro">
+						<center>
+							<h2 class="top-content">COFFEE EPRESSOR</h2>
+						</center>
+					</div>
+				</div>
+			</a>
+			<a href="page03.html">
+				<div class="pro-2">
+					<div class="content-pro">
+						<center>
+							<h2 class="top-content">BLENDED COFFEE</h2>
+						</center>
+					</div>
+				</div>
+				</a>
+				<a href="page03.html">
+				<div class="pro-3">
+					<div class="content-pro">
+						<center>
+							<h2 class="top-content">SPECIAL TEA</h2>
+						</center>
+					</div>
+				</div>
+				</a>
+				<a href="page03.html">
+				<div class="pro-4">
+					<div class="content-pro">
+						<center>
+							<h2 class="top-content">MOCKTAIL</h2>
+						</center>
+					</div>
+				</div>
+				</a>
+				<a href="page03.html">
+				<div class="pro-5">
+					<div class="content-pro">
+						<center>
+							<h2 class="top-content">CHOCOLATE</h2>
+						</center>
+					</div>
+				</div>
+				</a>
+				<a href="page03.html">
+				<div class="pro-6">
+					<div class="content-pro">
+						<center>
+							<h2 class="top-content">SMOOTHIES</h2>
+						</center>
+					</div>
+				</div>
+				</a>
+			</div>
+		</div>
+		<div class="footer">
+				<div class="content-footer">
+					<img src="images/tch3.png">
+					<p>223 Võ Văn Tần, Quận 3, HCM</p>
+					<p>Hotline : 028 71 087 088</p>
+					<p>Giao hàng miễn phí : 1800 6936</p>
+				</div>
+				<div class="hr"></div>
+				<center>
+					<h3>POWERED BY HAI PHAM</h3>
+				</center>
+		</div>
+	</div>
+		<script>
+			function openNav() {
+				document.getElementById("mySidenav").style.width = "350px";
+			}
+
+			function closeNav() {
+				document.getElementById("mySidenav").style.width = "0";
+			}	
+			window.onscroll = function() {myFunction()};
+
+			function myFunction() {
+				if (document.documentElement.scrollTop > 10) {
+					document.getElementById("navtop1").style.height = "80px";
+					document.getElementById("openbutton").style.opacity = "1";
+				} else {
+					document.getElementById("navtop1").style.height = "0";
+					document.getElementById("openbutton").style.opacity = "0";
+				}
+			}
+	</script>
+</body>
+</html>
